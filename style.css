@@ -1,0 +1,45 @@
+
+.search-field input {
+    max-width: 300px;
+}
+
+.player-card {
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px); 
+    box-sizing: border-box;  
+    align-items: center;
+}
+
+.player-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.modal-body img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .search-field input {
+        width: 100%;
+    }
+
+    .player-card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .player-card {
+        flex: 1 1 100%;
+    }
+}
